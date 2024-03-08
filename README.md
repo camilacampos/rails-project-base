@@ -1,4 +1,4 @@
-# Rails Base Project
+# Rails Base Project (API only)
 
 ## Setup
 ### System requirements
@@ -9,17 +9,22 @@
 | Docker         | **24.0.6**  |
 | Docker-compose | **2.22.0**  |
 
+### Setup project name
+Before building and running the application, substitute every `changeme` with the project name.
+
 ### Running the application
 
 To build the system, run: `make build`
 
-Make sure the network sequra is created: `docker network create sequra`
+Make sure the network changeme is created: `docker network create <project-network>`
 
 To install and/or update dependencies, run: `make bundle-install`
 
 To run the application, run: `make run`
 
 To run a terminal attached with debug active (pry), run: `make run-debugging`
+
+The project will be running on [http://localhost:7777/](http://localhost:7777/)
 
 ### Testing and linting
 

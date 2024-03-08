@@ -10,12 +10,12 @@ default: &default
 
 development:
   <<: *default
-  database: sequra_challenge_development
+  database: changeme_development
 
 test:
   <<: *default
-  database: sequra_challenge_test
+  database: changeme_test
 
 production:
   <<: *default
-  database: sequra_challenge_production
+  database: changeme_production

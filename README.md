@@ -1,5 +1,7 @@
 # Rails Base Project (API only)
 
+This project is meant to be a template for new rails projects (with only api configured). Just clone it or use it as a template to create your new repo.
+
 ## Setup
 ### System requirements
 

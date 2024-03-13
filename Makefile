@@ -3,7 +3,7 @@ build:
 
 up:
 	rm -f tmp/pids/server.pid
-	docker network create changeme 2>/dev/null; docker-compose up -d
+	docker network create change_me 2>/dev/null; docker-compose up -d
 
 stop:
 	docker-compose stop
@@ -18,7 +18,7 @@ run: up
 	docker-compose exec app rails db:drop db:setup
 
 run-debugging:
-	docker attach $$(docker ps -f name=changeme-app-1 -q)
+	docker attach $$(docker ps -f name=change_me-app-1 -q)
 
 rebuild: down build run
 
@@ -74,4 +74,4 @@ bundle-add:
 	docker-compose run --rm app bundle add $(filter-out $@,$(MAKECMDGOALS))
 
 psql: up
-	psql postgres://root@localhost:7771/changeme_development
+	psql postgres://root@localhost:7771/change_me_development

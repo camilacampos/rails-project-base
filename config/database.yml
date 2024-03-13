@@ -10,12 +10,12 @@ default: &default
 
 development:
   <<: *default
-  database: changeme_development
+  database: change_me_development
 
 test:
   <<: *default
-  database: changeme_test
+  database: change_me_test
 
 production:
   <<: *default
-  database: changeme_production
+  database: change_me_production

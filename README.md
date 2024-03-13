@@ -12,13 +12,13 @@ This project is meant to be a template for new rails projects (with only api con
 | Docker-compose | **2.22.0**  |
 
 ### Setup project name
-Before building and running the application, substitute every `changeme` with the project name.
+Before building and running the application, substitute every `change_me` or `ChangeMe` in this project for the new project name.
 
 ### Running the application
 
 To build the system, run: `make build`
 
-Make sure the network changeme is created: `docker network create <project-network>`
+Make sure the network "change_me" is created: `docker network create change_me`
 
 To install and/or update dependencies, run: `make bundle-install`
 
